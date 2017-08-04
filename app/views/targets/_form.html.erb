@@ -1,0 +1,9 @@
+<%= simple_form_for([@campaign, @campaign.targets.build]) do |f| %>
+  <%= f.input :name, label: "Name" %>
+  <%= f.input :website, label: "Website" %>
+  <%= f.input :blog, label: "Blog" %>
+  <%= f.input :facebook, label: "Facebook page url" %>
+  <%= f.input :twitter, label: "Twitter url" %>
+  <%= f.input :instagram, label: "Instagram" %>
+  <%= f.button :submit %>
+<% end %>

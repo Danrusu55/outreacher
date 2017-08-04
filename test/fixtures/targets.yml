@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  status: MyString
+  website: MyString
+  blog: MyString
+  facebook: MyString
+  twitter: MyString
+  instagram: MyString
+  lastengaged: 2017-07-21 15:17:41
+  campaign: one
+  user: one
+
+two:
+  name: MyString
+  status: MyString
+  website: MyString
+  blog: MyString
+  facebook: MyString
+  twitter: MyString
+  instagram: MyString
+  lastengaged: 2017-07-21 15:17:41
+  campaign: two
+  user: two

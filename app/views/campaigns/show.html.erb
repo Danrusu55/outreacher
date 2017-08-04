@@ -1,0 +1,33 @@
+<!-- not in use, directs to building -->
+
+<div class="row">
+  <div class="col-md-2">
+    <h3>Building - Built</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <h2><%= @campaign.name %></h2>
+    <h5>Website: <%= @campaign.website %></h5>
+
+    <%= link_to 'Back', root_path %>
+    <%= link_to 'Edit', edit_campaign_path(@campaign) %>
+    <%= link_to 'Remove', campaign_path(@campaign), method: :delete, data: { confirm: "Are you sure?"} %>
+
+    <h3>Targets</h3>
+
+    <%= render @campaign.targets %>
+    <h4>Create a target</h4>
+    <%= render 'targets/form' %>
+  </div>
+  <div class="col-md-5">
+    <p>search/filter</p>
+    <p>activity here</p>
+  </div>
+  <div class="col-md-5">
+    <p>
+      preview here
+    </p>
+  </div>
+</div>

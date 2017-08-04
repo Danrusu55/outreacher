@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Source</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Grouping</th>
+      <th>Date</th>
+      <th>Commentsretweets</th>
+      <th>Responses</th>
+      <th>Likes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.target %></td>
+        <td><%= entry.source %></td>
+        <td><%= entry.title %></td>
+        <td><%= entry.description %></td>
+        <td><%= entry.grouping %></td>
+        <td><%= entry.date %></td>
+        <td><%= entry.commentsretweets %></td>
+        <td><%= entry.responses %></td>
+        <td><%= entry.likes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

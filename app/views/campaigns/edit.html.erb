@@ -1,0 +1,4 @@
+<h1>Edit campaign</h1>
+<%= render 'form' %>
+<%= link_to 'Remove', campaign_path(@campaign), method: :delete, data: { confirm: "Are you sure?"} %>
+<%= link_to 'Cancel', campaigns_path %>

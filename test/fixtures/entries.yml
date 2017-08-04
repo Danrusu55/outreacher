@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  target: one
+  source: MyString
+  title: MyString
+  description: MyString
+  grouping: MyString
+  date: 2017-08-01 14:52:37
+  commentsretweets: 1
+  responses: 1
+  likes: 1
+
+two:
+  target: two
+  source: MyString
+  title: MyString
+  description: MyString
+  grouping: MyString
+  date: 2017-08-01 14:52:37
+  commentsretweets: 1
+  responses: 1
+  likes: 1

@@ -1,0 +1,16 @@
+<h1>Campaign Manager</h1>
+
+<% @campaigns.each do |campaign| %>
+  <div class="">
+    <h3><%= link_to campaign.name, building_campaign_path(campaign) %></h3>
+    <h4><%= campaign.website %></h4>
+    <% if user_signed_in? %>
+      <%= link_to 'Edit', edit_campaign_path(campaign) %>
+      <%= link_to 'Remove', campaign_path(campaign), method: :delete, data: { confirm: "Are you sure?"} %>
+    <% end %>
+  </div>
+<% end %>
+<br><br>
+<% if user_signed_in? %>
+  <%= link_to 'Create campaign', new_campaign_path%>
+  <% end %>

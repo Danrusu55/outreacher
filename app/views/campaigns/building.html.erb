@@ -1,0 +1,28 @@
+<%= render 'secondnav' %>
+
+<h2>Building</h2>
+<div class="row">
+  <div class="col-md-2">
+    <h2><%= @campaign.name %></h2>
+    <h5>Website: <%= @campaign.website %></h5>
+
+    <%= link_to 'Back', root_path %>
+    <%= link_to 'Edit', edit_campaign_path(@campaign) %>
+    <%= link_to 'Remove', campaign_path(@campaign), method: :delete, data: { confirm: "Are you sure?"} %>
+
+    <h3>Targets</h3>
+    <p>
+      <%= link_to 'edit targets', campaign_targets_path(@campaign)%>
+    </p>
+    <%= render @campaign.targets %>
+  </div>
+  <div class="col-md-5" style="border:1px solid black">
+    <p>search/filter</p>
+    <p>activity here</p>
+  </div>
+  <div class="col-md-5">
+    <p>
+      preview here
+    </p>
+  </div>
+</div>

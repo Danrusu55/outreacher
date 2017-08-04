@@ -1,0 +1,9 @@
+<h4> <%= link_to target.name, campaign_target_entries_path(@campaign, target.id) %></h4>
+<h5><%= target.website %></h5>
+<%= link_to "Edit", edit_campaign_target_path(@campaign, target.id) %>
+<%= link_to "Remove", campaign_target_path(@campaign,target.id), method: :delete, data: {confirm: "Are you sure?"} %>
+<p>Activity ≥</p>
+<p>Mentions ≥</p>
+<p>Engaged ≥</p>
+<p>Responded ≥</p>
+<p>Conversing ≥</p>

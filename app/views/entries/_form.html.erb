@@ -1,0 +1,19 @@
+<%= simple_form_for(@entry) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :target %>
+    <%= f.input :source %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :grouping %>
+    <%= f.input :date %>
+    <%= f.input :commentsretweets %>
+    <%= f.input :responses %>
+    <%= f.input :likes %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

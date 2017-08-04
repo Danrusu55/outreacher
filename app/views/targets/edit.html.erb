@@ -1,0 +1,12 @@
+<h1>Edit target</h1>
+<%= simple_form_for([@campaign, @target]) do |f| %>
+  <%= f.input :name, label: "Name" %>
+  <%= f.input :website, label: "Website" %>
+  <%= f.input :blog, label: "Blog" %>
+  <%= f.input :facebook, label: "Facebook page url" %>
+  <%= f.input :twitter, label: "Twitter url" %>
+  <%= f.input :instagram, label: "Instagram" %>
+  <%= f.button :submit %>
+<% end %>
+<%= link_to 'Remove', campaign_target_path(@target), method: :delete, data: { confirm: "Are you sure?"} %>
+<%= link_to 'Cancel', campaigns_path %>
